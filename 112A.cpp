@@ -9,7 +9,7 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-void solve();
+int solve(string s1, string s2);
 int main()
 {
 ios_base::sync_with_stdio(false);cin.tie(NULL);
@@ -20,19 +20,29 @@ freopen("error.txt", "w", stderr);
 freopen("output.txt", "w", stdout);
 #endif
 
-int t=1;
-cin>>t;
-while(t--)
-{
-	solve();
-	cout << "Hellow World";
-	cout<<"\n";
-}
+string s1, s2;
+cin>>s1;
+cin >> s2;
+
+transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+transform(s2.begin(), s2.end(), s2.begin(), ::tolower);
+
+int res = solve(s1, s2);
+
+cout << res;
 
 cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
 return 0;
 }
-void solve()
+int solve(string s1, string s2)
 {
-	cout << "Hellow World";
+	if (s1 == s2) return 0;
+
+	int i = 0;
+	while (i < s1.size()) {
+		if (s1[i] == s2[i]) continue;
+		if (s1[i] < s2[i]) return -1;
+		else return 1;
+	}
+
 }
