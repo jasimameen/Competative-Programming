@@ -8,7 +8,7 @@ int main() {
 
 	cout << "\n\n";
 
-	if (s1>s2) cout << s1 << " is greator " << s2;
+	if (s1>s2) cout << s1 << " is higher " << s2;
 	else cout << s1 << " is lower than " << s2;
 
 	cout << "\n\n";
