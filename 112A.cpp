@@ -40,7 +40,10 @@ int solve(string s1, string s2)
 
 	int i = 0;
 	while (i < s1.size()) {
-		if (s1[i] == s2[i]) continue;
+		if (s1[i] == s2[i]) {
+			i++;
+			continue;
+		}
 		if (s1[i] < s2[i]) return -1;
 		else return 1;
 	}
