@@ -44,8 +44,8 @@ string solve(string s)
 	vector<int> vs;
 
 	for (int i=0; i<s.size(); i+=2){
-		int in = (int) s[i];
-		vs.emplace_back(in);
+		// int in = ;
+		vs.emplace_back((int) s[i]);
 	}
 	
 	sort(vs.begin(), vs.end());
