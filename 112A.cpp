@@ -25,6 +25,7 @@ cin>>t;
 while(t--)
 {
 	solve();
+	cout << "Hellow World";
 	cout<<"\n";
 }
 
