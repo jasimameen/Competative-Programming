@@ -7,7 +7,7 @@ int main() {
 	string s1 = "a", s2 ="b";
 
 	if (s1>s2) cout << "greator";
-	else cout << "lower";
+	else cout << "\nlower\n";
 
 	return 0;
 }
