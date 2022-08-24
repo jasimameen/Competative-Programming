@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-	string s1 = "a", s2 ="b";
+	string s1 = "z", s2 ="b";
 
 	cout << "\n\n";
 
