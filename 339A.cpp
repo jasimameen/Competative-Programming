@@ -43,10 +43,8 @@ string solve(string s)
 	string res; // result string
 	vector<int> vs;
 
-	for (int i=0; i<s.size(); i+=2){
-		// int in = ;
+	for (int i=0; i<s.size(); i+=2)
 		vs.emplace_back((int) s[i]);
-	}
 	
 	sort(vs.begin(), vs.end());
 
@@ -54,6 +52,7 @@ string solve(string s)
 		res += x;
 		res += '+';
 	}
+	res.pop_back();
 	
 	
 
