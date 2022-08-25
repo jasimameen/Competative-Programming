@@ -16,7 +16,7 @@ using namespace std;
 
 string solve(string s)
 {
-	regex reg("h+e+l+l*o+");
+	regex reg("h[a-z]*e[a-z]*l[a-z]*l[a-z]*o[a-z]*");
 
 	if (regex_search(s, reg)) return "YES";
 
