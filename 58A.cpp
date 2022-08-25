@@ -18,7 +18,7 @@ string solve(string s)
 {
 	regex reg("h+e+l+l*o+");
 
-	if (regex_match(s, reg)) return "YES";
+	if (regex_search(s, reg)) return "YES";
 
 	return "NO";
 }
