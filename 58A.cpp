@@ -16,7 +16,7 @@ using namespace std;
 
 string solve(string s)
 {
-	regex reg("Hellow");
+	regex reg("h+e+l+l*o+");
 
 	if (regex_match(s, reg)) return "YES";
 
