@@ -13,7 +13,14 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-void solve();
+
+void solve(string s)
+{
+	regex reg("Hellow");
+	return;
+}
+
+// Driver Code
 int main()
 {
 ios_base::sync_with_stdio(false);cin.tie(NULL);
@@ -24,18 +31,11 @@ freopen("error.txt", "w", stderr);
 freopen("output.txt", "w", stdout);
 #endif
 
-int t=1;
-cin>>t;
-while(t--)
-{
-	solve();
-	cout<<"\n";
-}
+string s;
+cin>>s;
+solve(s);
 
 cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
 return 0;
 }
-void solve()
-{
-	cout << "Hellow";
-}
+
