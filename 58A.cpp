@@ -14,10 +14,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void solve(string s)
+string solve(string s)
 {
 	regex reg("Hellow");
-	return;
+
+	if (regex_match(s, reg)) return "YES";
+
+	return "NO";
 }
 
 // Driver Code
@@ -33,7 +36,7 @@ freopen("output.txt", "w", stdout);
 
 string s;
 cin>>s;
-solve(s);
+cout << solve(s);
 
 cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
 return 0;
