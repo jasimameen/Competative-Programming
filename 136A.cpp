@@ -18,12 +18,12 @@ int n, f;
 cin >> n;
 int arr[n+1];
 
-for (int i=1; i<n; i++) {
+for (int i=1; i<=n; i++) {
 	cin>>f;
 	arr[f] = i;
 }
 
-for (int i=1; i<n; i++) {
+for (int i=1; i<=n; i++) {
 	cout << arr[i] << " ";
 }
 
