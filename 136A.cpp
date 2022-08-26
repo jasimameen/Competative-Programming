@@ -2,9 +2,6 @@
 
 using namespace std;
 
-void solve(){
-	
-}
 
 
 int main()
@@ -17,7 +14,18 @@ freopen("error.txt", "w", stderr);
 freopen("output.txt", "w", stdout);
 #endif
 
-solve();
+int n, f;
+cin >> n;
+int arr[n+1];
+
+for (int i=1; i<n; i++) {
+	cin>>f;
+	arr[f] = i;
+}
+
+for (int i=i; i<n; i++) {
+	cout << arr[i] << " ";
+}
 
 cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
 return 0;
