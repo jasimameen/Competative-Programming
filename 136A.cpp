@@ -23,7 +23,7 @@ for (int i=1; i<n; i++) {
 	arr[f] = i;
 }
 
-for (int i=i; i<n; i++) {
+for (int i=1; i<n; i++) {
 	cout << arr[i] << " ";
 }
 
