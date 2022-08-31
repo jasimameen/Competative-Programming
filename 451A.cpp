@@ -1,10 +1,9 @@
-// Temporrary file to track of all data 
-
 #include<bits/stdc++.h>
 
 using namespace std;
 
-int main() {
+int main()
+{
 ios_base::sync_with_stdio(false);cin.tie(NULL);
 
 #ifndef ONLINE_JUDGE
@@ -12,15 +11,16 @@ freopen("input.txt", "r", stdin);
 freopen("error.txt", "w", stderr);
 freopen("output.txt", "w", stdout);
 #endif
+	
+	int n,m, temp;
+	cin>>n>>m;
+	temp = min(n,m);
+	if (temp%2==0) cout << "Malvika";
+	else cout << "Akshat";
+	
 
-	int n=3;
-	int[] p;
-	while (n--) {
-		cin >> p[n];
-	}
-	while (n--) {
-		cout << p[n] << endl;
-	}
 
-	return 0;
+cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC<<" secs"<<endl;
+return 0;
 }
+
