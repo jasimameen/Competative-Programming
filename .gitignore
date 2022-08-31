@@ -1,4 +1,4 @@
-error.txt
-input.txt
-output.txt
-temporary.cpp
+./error.txt
+./input.txt
+./output.txt
+./temporary.cpp
