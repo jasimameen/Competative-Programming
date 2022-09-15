@@ -3,10 +3,20 @@
 using namespace std;
 
 void solve() {
-	int n = 10;
-	while (--n) {
-		cout << n;
-	}
+	int a, b, c;
+	cin>>a>>b>>c;
+
+	int da = abs(1-a);
+	int db;
+
+	if (abs(1-b) > abs(1-c)) db = abs(1-c) + abs(b-c);
+	else db = abs(1-b) + abs(b-c)*2;
+
+
+	if (da<db) cout << 1;
+	else if (da>db) cout << 2;
+	else cout << 3;
+
 }
 
 

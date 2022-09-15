@@ -2,11 +2,17 @@
 
 using namespace std;
 
-void solve() {
-	int n = 10;
-	while (--n) {
-		cout << n;
+int solve() {
+	int n, m, total=0, temp;
+	cin>>n>>m;
+
+	while (n--) {
+		cin>>temp;
+		total+=temp;	
 	}
+
+	return total%m;
+	
 }
 
 
@@ -18,12 +24,12 @@ freopen("input.txt", "r", stdin);
 freopen("output.txt", "w", stdout);
 #endif
 
-int t;
+int t, ts=1;
 cin>>t;
 while(t--) 
 {
-	solve();
-	cout<<"\n";
+	cout<<"Case #" << ts << ": " << solve() <<"\n";
+	ts++;
 }
 
 return 0;
